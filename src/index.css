@@ -1,14 +1,27 @@
-div {
+.container {
   background-color: lightskyblue;
+  margin: 1rem;
 }
 
+select,
 input {
   margin: 1rem;
   outline: none;
   border: none;
   padding: 5px;
+  color: rgb(32, 32, 32);
 }
 
 p {
   padding: 1rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 140, 175);
+}
+
+.payment,
+.your-fav-car,
+.input-span {
+  background-color: rgb(0, 109, 136);
+  padding: 5px 10px;
+  border-radius: 5px;
 }
