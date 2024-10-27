@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function SimpleTwo() {
   const [car, setCar] = useState({
-    year: 0,
+    year: "",
     make: "",
     model: "",
   });
@@ -24,11 +24,21 @@ function SimpleTwo() {
       <p>
         Your Fav Car Is: {car.year} {car.make} {car.model}
       </p>
-      <input type="number" value={car.year} onChange={onchangeYear} />
+      <input type="number" onChange={onchangeYear} placeholder="2024" />
       <br />
-      <input type="text" value={car.make} onChange={onchangeMake} />
+      <input
+        type="text"
+        value={car.make}
+        onChange={onchangeMake}
+        placeholder="Made By?"
+      />
       <br />
-      <input type="text" value={car.model} onChange={onchangeModel} />
+      <input
+        type="text"
+        value={car.model}
+        onChange={onchangeModel}
+        placeholder="What Model?"
+      />
     </div>
   );
 }
